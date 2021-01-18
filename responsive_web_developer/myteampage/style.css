@@ -1,0 +1,145 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+img {
+  display:block;
+  width: 80%;
+}
+
+h3 { 
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* HEADER */
+
+.header {
+  margin-top : 1em;
+  display:flex;
+  justify-content: space-between;
+}
+
+.h-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-left: 20px;
+  max-width: 350px;
+}
+
+.h-subtitle {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+.h-para {
+  font-size: 16px;
+  line-height:1.4;
+
+}
+
+
+/* TEAM MEMBERS */
+
+.team-members{
+  margin-top: 2em;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas : 
+  "one two three"
+  "four five six";
+  
+}
+
+.profile {margin-top: 3em;}
+
+.photo-one {grid-area: one;}
+
+.photo-two {
+  grid-area: two;
+  margin-top: 8em;}
+
+.photo-three {grid-area: three;}
+
+.photo-four {grid-area: four;}
+
+.photo-five {
+  grid-area: five;
+  margin-top: 8em;}
+
+.photo-six {grid-area: six;}
+
+.vertical-text {
+  position:relative;
+  width:200px; 
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* .vertical-text > p {
+  position: absolute;
+  transform: rotate(90deg);
+} */
+
+/* .vertical-text > p {
+  writing-mode: vertical-lr;
+  position: absolute;
+} */
+ 
+/* FOOTER */
+
+footer {
+  text-align: center;
+  margin: 2em 0 2em;
+  color: #A9A9A9;
+  font-size: 14px;
+}
+
+/*  MEDIA QUERIES */
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .h-para {
+    font-size: 12px;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas :
+    "one two"
+    "three four"
+    "five six";
+  }
+  
+.photo-two, 
+.photo-four, 
+.photo-six {
+  margin-top: 8em;
+}
+
+.photo-five {
+  margin-top: 3em;
+}
+
+}
+
