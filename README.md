@@ -1,6 +1,6 @@
 ## DevChallenges.io
 
-DevChallenges have multiple challenge paths. , this repo serves as one place to find all my submissions for all the challenges. 
+DevChallenges.io have multiple challenge paths. , this repo serves as one place to find all my submissions for all the challenges. 
 Each path is a folder which houses the individual challenges for each path.
 
 I am currently busy doing 'Responsive Web Developer' path.
