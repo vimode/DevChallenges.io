@@ -70,7 +70,8 @@ ul li a {
   font-size: 16px;
 }
 
-ul li:hover{
+ul li:hover,
+ul li:focus{
   transform:scale(1.02);
   transition: 200ms;
 }
@@ -80,6 +81,11 @@ ul li:hover{
   -moz-filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.pending:hover,
+.pending:hover{
+  transform:scale(1);
 }
 
 .footer {
