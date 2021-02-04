@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #455a64;
+}
+
+h1 { 
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  color: #37474f;
+  font-weight: 500;
+  border-bottom: 1px solid #78909c;
+  display:inline-block;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+  margin: auto;
+  max-width: 100%;
+  width: 90vw;
+}
+
+nav {
+  text-align: left;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+nav a { 
+  text-decoration: none;
+  color : #000;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #e64a19;
+  font-size: 21px;
+}
+
+
+ul {
+  display:grid;
+  list-style: none;
+  padding: 0;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+ul li img {
+  display: block;
+  object-fit: cover;
+  height: 200px;
+  width: 300px;
+  margin: auto;
+} 
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+ul li:hover{
+  transform:scale(1.02);
+  transition: 200ms;
+}
+
+.incomplete {
+  -o-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.footer {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+@media(min-width:800px){
+  ul{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(min-width: 1400px) {
+  ul {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
