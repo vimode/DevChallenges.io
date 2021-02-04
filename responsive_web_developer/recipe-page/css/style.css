@@ -1,73 +1,134 @@
-/*     font-family: 'Playfair Display', serif; 
-font-family: 'Montserrat', sans-serif;
-*/
-
-/* Global */
-
 body {
   margin: 0;
   background : ##ffff;
   color: #4f4f4f;
-  padding: 5rem 15rem 0 4rem;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
-.container{
-  
+h3 {
+  font-weight: 300;
+  font-style: italic;
+}
+ 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1020px;
 }
 
-
-/* Recipe Title*/
-
-.main-title { 
-  margin-bottom: 2rem;
+.main-info{
+  display:flex;
 }
-
-.main-title h1{
-  color: #000000;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 0.60rem;
-  font-family: 'Playfair Display', serif; 
-}
-
-.recipe-img > img {
-  margin-bottom: 2rem;
+.main-info img {
   width: 100%;
-  border-radius: 12px;
+}
+.main-info p{
+  padding: 0.5em;
+}
+
+.main-description {
+  width:65%;
+  font-style:italic;
+}
+.main-img {
+  width: 100%;
+}
+
+.sidebar {
+  float:right;
+  margin-top: 10px;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.basic-details {
+  display:flex;
+  padding: 0 0.5em;
+  font-size: 0.8rem;
+  color: grey; 
+}
+
+.local {
+  color: orange;
+}
+
+.basic-details p {
+  color: black;
+  padding: 0.2em; 
+}
+
+
+.details {
+  width: 60%;
+}
+
+.ingredients div {
+  display:flex;
+  padding: 0.3em 0.5em;
+}
+
+.input-checkbox {
+  margin-right: 1em;
+}
+
+.instructions ol {
+  list-style:none;
+  counter-reset:numbers;
+  padding:0;
+}
+
+.instructions ol li {
+  counter-increment: numbers;
+  display:flex;
+  align-items:flex-start;
+}
+
+.instructions ol li::before {
+  content:counter(numbers);
+  background:orange;
+  color: #FFF;
+  padding: 0 0.6em;
+  margin: 2em;
+  font-weight: 600;
+  border-radius:0.5em;
+}
+
+.source {
+  color: gray;
+  padding: 0.5em;
+  font-style:italic;
 
 }
 
-/* Recipe */
-
-/* Ingredients */
-
-.main-ingredients {
-  display:flex;
-  justify-content: space-between;
-  flex-flow: row-reverse;
+.footer {
+  text-align:center;
+  font-size: 0.8em;
 }
 
-.cooking-box {
-  border-radius: 12px;
-  box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
-  display:flex;
-  flex-direction:column;
-  padding: 4rem 3rem;
-  height: 500px;
-  }
-
-  .cooking-time {
-    display:flex;
-    flex-direction:row;
-    align-items: center;
+@media (max-width: 650px) {
+  
+  .container {
     width: 100%;
+    margin: 0 auto;
+    padding: 1em;
   }
 
-  .cooking-text {
+  .sidebar {
+    float:none;
+    width: inherit;
+    padding: 0.5em;
+
+  }
+
+  .sidebar div {
+    padding: 0;
+    margin-right: 0;
+    width: inherit;
+  }
+
+  .other-details {
     display:flex;
-    flex-direction: column;
-    align-items : center;
-
+    justify-content: space-between;
   }
+}
