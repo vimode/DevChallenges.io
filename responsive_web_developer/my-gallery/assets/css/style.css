@@ -37,7 +37,8 @@ img {
 .profile h2{
   font-size: 1.5rem;
   line-height: 1.5rem;
-  color: #4e5150;;
+  color: #4e5150;
+  margin: 1em 0 0 0.25em;
 }
 
 .profile p {
@@ -51,7 +52,7 @@ img {
   display:flex;
   justify-content: center;
   gap: 1em;
-  margin: 0.5em 0;
+  margin: 0.8em;
 }
 
 .blocks{
@@ -59,30 +60,72 @@ img {
   text-align:center;
   background: #e5e5e5;
   border-radius: 0.75rem;
-  padding: 0.5rem; 
+  padding: 0.5rem 2rem; 
+}
+
+.blocks p:nth-child(1) {
+  color:#4e5150;
+  font-size: 1.25rem;
+}
+
+.blocks p:nth-child(2){
+  color: #bdbdbd;
+  padding: 0.2rem;
+  font-size:1rem;
 }
 
 .gallery{
+  margin: 0 1em;
   display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:repeat(3,1fr);
+  gap: 1em;
+  grid-template-areas : 
+        "img1 img2 img2"
+        "img3 img3 img4"
+        "img5 img6 img4"
 }
 
 .gallery-img{
-
+  width: 100%;
+  height: 100%;
+  display:block;
 }
 
-.gallery-image1{}
-.gallery-image2{}
-.gallery-image3{}
-.gallery-image4{}
-.gallery-image5{}
-.gallery-image6{}
-
-
+.gallery-image1{grid-area:img1;}
+.gallery-image2{grid-area:img2;}
+.gallery-image3{grid-area:img3;}
+.gallery-image4{grid-area:img4;}
+.gallery-image5{grid-area:img5;}
+.gallery-image6{grid-area:img6;}
 
 footer {
-  margin: 0 auto;
+  margin: 1em auto;
   font-size: 0.8rem;
   color: #a9a9a9;
 }
 
 
+/* media queries */
+
+@media(max-width: 600px){
+    .profilePhoto{
+      width: 8rem;
+    }
+
+    .blocks{
+      padding: 0.5rem 1rem; 
+    }
+    
+    .blocks p:nth-child(1) {
+      color:#4e5150;
+      font-size: 1.1rem;
+    }
+    
+    .blocks p:nth-child(2){
+      color: #bdbdbd;
+      padding: 0.1rem;
+      font-size:0.8rem;
+    }
+
+  }
