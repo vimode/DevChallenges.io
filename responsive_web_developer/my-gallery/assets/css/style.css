@@ -118,14 +118,42 @@ footer {
     }
     
     .blocks p:nth-child(1) {
-      color:#4e5150;
       font-size: 1.1rem;
     }
     
     .blocks p:nth-child(2){
-      color: #bdbdbd;
       padding: 0.1rem;
       font-size:0.8rem;
     }
+
+  }
+
+  @media(max-width: 375px){
+    .profile {
+      margin-bottom:0;
+    }
+    .stats {
+      margin-bottom:0;
+    }
+
+    .blocks {
+      padding: 0.2rem 0.5rem;
+      margin-bottom: 0;
+    }
+
+    .blocks p:nth-child(1) {
+      font-size: 0.9rem;
+    }
+    
+    .blocks p:nth-child(2){
+      padding: 0.2rem;
+      font-size:0.75rem;
+    }
+
+    .gallery {
+      margin-top: 0;
+      gap: 0.5em;
+    }
+
 
   }
