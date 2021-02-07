@@ -10,18 +10,17 @@ This [path](https://devchallenges.io/paths/responsiveWebPaths) has eight challen
 - [x] 404 Not Found
 - [x] My team page
 - [x] Interior Consultant
-- [ ] Recipe Page
-- [ ] My Gallery
+- [x] Recipe Page
+- [x] My Gallery
 - [ ] Checkout Page
 - [ ] Edie homepage
 - [ ] Portfolio
 
 ###### Current Status  
 - Busy completing the 'Responsive Web Developer' path.
-- Building a home page to house the challenges.
 
 ###### Pending repo activities  : 
 - Update README page for the path.
 - Custom README pages for each challenge.
-- Deploy and link all the finished challenges.
-- Make this repo public
+
+
