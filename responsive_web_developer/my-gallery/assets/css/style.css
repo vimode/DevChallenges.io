@@ -96,8 +96,8 @@ img {
 .gallery-image2{grid-area:img2;}
 .gallery-image3{grid-area:img3;}
 .gallery-image4{grid-area:img4;}
-.gallery-image5{grid-area:img5;}
-.gallery-image6{grid-area:img6;}
+.gallery-image5{grid-area:img6;}
+.gallery-image6{grid-area:img5;}
 
 footer {
   margin: 1em auto;
@@ -109,6 +109,7 @@ footer {
 /* media queries */
 
 @media(max-width: 600px){
+
     .profilePhoto{
       width: 8rem;
     }
@@ -124,6 +125,10 @@ footer {
     .blocks p:nth-child(2){
       padding: 0.1rem;
       font-size:0.8rem;
+    }
+
+    .gallery {
+      gap:0.5rem;
     }
 
   }
@@ -152,7 +157,7 @@ footer {
 
     .gallery {
       margin-top: 0;
-      gap: 0.5em;
+      gap: 0.3em;
     }
 
 
