@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom CSS -->
+<link rel="stylesheet" href="/responsive_web_developer/checkout-page/assets/css/style.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <!-- Fonts -->
+
+  <title>Checkout Page</title>
+</head>
+<body>
+  
+ <div class="container">
+  <header class="header">
+    <h1 class="header_title">Checkout</h1>
+  </header>
+
+  <section class="shipping">
+    <div class="shipping_products">
+      
+      <div class="product">
+        <img src="/responsive_web_developer/checkout-page/assets/img/photo1.png" alt="Vintage Backpack" class="product_photo">
+        <div class="product_details">
+          <div class="product_name">
+            <h2 class="product_title">Vintage Backpack</h2>
+            <span class="product_discount">$54.99</span>
+            <span class="product_price">$94.99</span>
+          </div>
+        </div> <!--product details-->
+
+        <div class="product_count">
+          <span id="less" class="material-icons">remove</span>
+          <span id="count">1</span>
+          <span id="add" class="material-icons">add</span>
+        </div> <!--product count-->
+
+      </div> <!--product-->
+
+      <div class="product">
+        <img src="/responsive_web_developer/checkout-page/assets/img/photo2.png" alt="Levi Shoes" class="product_photo">
+        <div class="product_details">
+          <div class="product_name">
+            <h2 class="product_title">Levi Shoes</h2>
+            <span class="product_discount">$74.99</span>
+            <span class="product_price">$124.99</span>
+          </div>
+        </div> <!--product details-->
+
+        <div class="product_count">
+          <span id="less" class="material-icons">remove</span>
+          <span id="count">1</span>
+          <span id="add" class="material-icons">add</span>
+        </div> <!--product count-->
+
+      </div> <!--product-->
+      
+    </div> <!-- shipping_products-->
+
+    <div class="shipping_total">
+      <div class="shipping_cost">
+        <span class="cost_title">Shipping</span>
+        <span class="cost_count">$19</span>
+      </div> <!-- shipping total-->
+
+      <div class="shipping_total">
+        <span class="cost_title">Total</span>
+        <span id="total" class="cost_count">$148.98</span>
+      </div>
+
+    </div> <!-- shipping total-->
+  </section> <!-- Shipping-->
+
+  <section class="information">
+    <form action="" id="send_form" class="contact">
+
+      <h2 class="information_title">Contact Information</h2>
+
+      <div class="information_details">
+        <label for="email" class="form_label">
+          E-mail
+          <span class="material-icons">mail</span>
+            <input type="text" name="email" id="email" class="form_input" placeholder="Enter your email..." required="">
+        </label>
+
+        <label for="phone" class="form_label">
+          Phone
+          <span class="material-icons">local_phone</span>
+            <input type="number" name="phone" id="phone" class="form_input" placeholder="Enter your phone..." required="">
+        </label>
+      </div>
+
+      <h2 class="information_shipping">Shipping address</h2>
+
+      <div class="information_address">
+        
+        <label for="fullName" class="form_label">
+          Full name <span class="material-icons">account_circle</span>
+          <input type="text" name="fullName" id="fullName" class="form_input" placeholder="Rodney Cotton" required="">
+        </label>
+        <label for="address" class="form_label">
+          Address <span class="material-icons">home</span>
+          <input type="text" name="address" id="address" class="form_input" placeholder="Your address..." required="">
+        </label>
+        <label for="city" class="form_label">
+          City <span class="material-icons">location_city</span>
+          <input type="text" name="city" id="city" class="form_input" placeholder="Your city.." required="">
+        </label>
+        
+        <div class="country">
+          <label for="country" class="form_label">
+            Country <span class="material-icons">public</span>
+          <input type="text" name="country" id="country" class="form_input" placeholder="Your country..." required="">
+          </label>        
+          <label for="postal" class="form_label">
+            Postal code <span class="material-icons">markunread_mailbox</span>
+            <input type="text" name="postal" id="postal" class="form_input" placeholder="Your postal code.." required="">
+          </label>
+        </div>
+
+        <div class="save">
+          <label for="save" class="form_save">
+            <input type="checkbox" name="save" id="save" class="form_input_save">
+            Save this information for next time
+          </label>
+        </div>
+        <div class="form_btn">
+          <input type="submit" value="Continue" class="btn_input">
+        </div>
+      </div> <!-- information address-->
+
+    </form>
+  </section><!-- information-->
+
+
+</div><!--container-->
+<footer>
+  <div class="footer"> Code on <a href="https://github.com/ppusher/DevChallenges.io">Github</a></div>
+</footer>
+
+  <!-- script -->
+
+</body>
+
+</html>
