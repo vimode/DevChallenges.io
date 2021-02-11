@@ -1,8 +1,5 @@
 ## '404 Not Found Page' Challenge
 
-This is the '404 Not Found' responsive page challenge  
-https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY
-
 **Challenge:** Create a 404 not found page following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:
 
 **User Story** : I can see a page following the given design
