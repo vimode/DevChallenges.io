@@ -1,12 +1,14 @@
 ## 'My team page' challenge
 
-This is the 'My team page' responsive page challenge
-https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U
+**Challenge:** Create my team page following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below
 
-User Story : I can see a page following the given design 
+- **User Story** : I can see a page following the given design 
 
 #### Status
-
-Pending : 
+Challenge completed - [Live link](https://dev-challenges-io.vimo.vercel.app/responsive_web_developer/myteampage/index.html)
+##### Pending 
 - Vertical text position
-- Footer font
+- Add screenshot of the completed challenge
+- Edit the footer as per the rules of the challenge to submit the final version
+
+ 
