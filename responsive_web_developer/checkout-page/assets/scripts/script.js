@@ -4,6 +4,8 @@ const lessOne  = document.getElementById("lessOne");
 const addTwo = document.getElementById("addTwo");
 const lessTwo = document.getElementById("lessTwo")
 
+const totalAmount = document.getElementById("total");
+
 const sendFrom = document.getElementById("send_form");
 
 const save = document.getElementById("save");
@@ -11,19 +13,6 @@ const save = document.getElementById("save");
 const allInputs = document.querySelectorAll("input");
 
 const btnPop = document.querySelector('#btnPop');
-
-const totalAmount = document.getElementById("total");
-
-
-// Reset Form
-const resetForm = () => {
-  allInputs.forEach((value,key) => {
-    if(value.type !== 'submit') {
-      value.value = "";
-    }
-  });
-};
-
 
 // Checkout box item changes
 
@@ -58,23 +47,11 @@ const total = () => {
 // Submit Form
 
 const submitForm = () => {
-
-  // const overlay = document.querySelector('.overlay');
-  // overlay.style.opacity = "1";
-  // overlay.style.visibility = 'unset';
-
   btnPop.click();
-
 }
 
 
-
-// Reset Checkout Items
-
-const resetItems = () => {
-  productOne.innerText = 1;
-  productTwo.innerText = 1;
-}
+// // Reset Checkout Items
 
 // EventListeners
 
@@ -108,3 +85,10 @@ window.addEventListener('load', () => {
   };
 
 })
+
+
+
+// const resetItems = () => {
+//   productOne.innerText = 1;
+//   productTwo.innerText = 1;
+// }
