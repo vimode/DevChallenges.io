@@ -37,9 +37,9 @@
         </div> <!--product details-->
 
         <div class="product_count">
-          <span id="less" class="material-icons icon-bg">remove</span>
+          <span id="lessOne" class="material-icons icon-bg">remove</span>
           <span id="countOne">1</span>
-          <span id="add" class="material-icons icon-bg">add</span>
+          <span id="addOne" class="material-icons icon-bg">add</span>
         </div> <!--product count-->
 
       </div> <!--product-->
@@ -55,9 +55,9 @@
         </div> <!--product details-->
 
         <div class="product_count">
-          <span id="less" class="material-icons icon-bg">remove</span>
+          <span id="lessTwo" class="material-icons icon-bg">remove</span>
           <span id="countTwo">1</span>
-          <span id="add" class="material-icons icon-bg">add</span>
+          <span id="addTwo" class="material-icons icon-bg">add</span>
         </div> <!--product count-->
 
       </div> <!--product-->
@@ -86,14 +86,14 @@
       <div class="information_details">
         <label for="email" class="form_label">
           E-mail
-          <span class="material-icons">mail</span>
-            <input type="text" name="email" id="email" class="form_input" placeholder="Enter your email..." required="">
+          <span class="material-icons form_icon" >mail</span>
+            <input type="text" name="email" id="email" class="form_input" placeholder="Enter your email..." required>
         </label>
 
         <label for="phone" class="form_label">
           Phone
-          <span class="material-icons">local_phone</span>
-            <input type="number" name="phone" id="phone" class="form_input" placeholder="Enter your phone..." required="">
+          <span class="material-icons form_icon">local_phone</span>
+            <input type="tel" name="phone" id="phone" class="form_input" placeholder="Enter your phone..." required>
         </label>
       </div>
 
@@ -102,28 +102,39 @@
       <div class="information_address">
         
         <label for="fullName" class="form_label">
-          Full name <span class="material-icons">account_circle</span>
-          <input type="text" name="fullName" id="fullName" class="form_input" placeholder="Rodney Cotton" required="">
+          Full name <span class="material-icons form_icon">account_circle</span>
+          <input type="text" name="fullName" id="fullName" class="form_input" placeholder="Rodney Cotton" required>
         </label>
         <label for="address" class="form_label">
-          Address <span class="material-icons">home</span>
-          <input type="text" name="address" id="address" class="form_input" placeholder="Your address..." required="">
+          Address <span class="material-icons form_icon">home</span>
+          <input type="text" name="address" id="address" class="form_input" placeholder="Your address..." required>
         </label>
         <label for="city" class="form_label">
-          City <span class="material-icons">location_city</span>
-          <input type="text" name="city" id="city" class="form_input" placeholder="Your city.." required="">
+          City <span class="material-icons form_icon">location_city</span>
+          <input type="text" name="city" id="city" class="form_input" placeholder="Your city.." required>
         </label>
         
-        <div class="country">
-          <label for="country" class="form_label">
-            Country <span class="material-icons">public</span>
-          <input type="text" name="country" id="country" class="form_input" placeholder="Your country..." required="">
-          </label>        
+        <div class="country_code">
+          <div class="country">
+          <label for="country" class="form_label">Country</label>
+          <!-- <span class="material-icons form_icon">public</span> -->
+            
+          <div class="country_drop">        
+              <select name="country" id="country" class="select_country"required>
+                <option value=""disabled selected>Your Country...</option>
+                <option value="canada">Canada</option>
+                <option value="india">India</option>
+                <option value="spain">Spain</option>
+              </select>  
+            </div>
+
+          </div> <!-- country-->
+                
           <label for="postal" class="form_label">
-            Postal code <span class="material-icons">markunread_mailbox</span>
-            <input type="text" name="postal" id="postal" class="form_input" placeholder="Your postal code.." required="">
+            Postal code <span class="material-icons form_icon">markunread_mailbox</span>
+            <input type="text" name="postal" id="postal" class="form_input" placeholder="Your postal code.." required>
           </label>
-        </div>
+        </div> <!--county_code-->
 
         <div class="save">
           <label for="save" class="form_save">
@@ -131,6 +142,7 @@
             Save this information for next time
           </label>
         </div>
+
         <div class="form_btn">
           <input type="submit" value="Continue" class="btn_input">
         </div>
@@ -138,15 +150,26 @@
 
     </form>
   </section><!-- information-->
+  <a id="btnPop" class="hidden" rel="nofollow" href="#alert">alert</a>
+  
+  <div id="alert" class="overlay">
+    <div class="popup">
+      <h3>Thank you</h3>
+      <p>Order Received.</p>
+      <a class="btnClose" href="">Close</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer"> Code on <a href="https://github.com/ppusher/DevChallenges.io">Github</a></div>
+  </footer>
 
 
 </div><!--container-->
-<footer>
-  <div class="footer"> Code on <a href="https://github.com/ppusher/DevChallenges.io">Github</a></div>
-</footer>
+
 
   <!-- script -->
-
+  <script src="/responsive_web_developer/checkout-page/assets/scripts/script.js"></script>
 </body>
 
 </html>
