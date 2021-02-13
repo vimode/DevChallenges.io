@@ -7,15 +7,11 @@ const lessTwo = document.getElementById("lessTwo")
 const totalAmount = document.getElementById("total");
 
 const sendFrom = document.getElementById("send_form");
-
 const save = document.getElementById("save");
-
 const allInputs = document.querySelectorAll("input");
-
 const btnPop = document.querySelector('#btnPop');
 
 // Checkout box item changes
-
 const changes = (action, id) => {
   const icon = document.getElementById(id);
   let update = parseInt(icon.innerText);
@@ -45,16 +41,12 @@ const total = () => {
 
 
 // Submit Form
-
 const submitForm = () => {
   btnPop.click();
 }
 
 
-// // Reset Checkout Items
-
 // EventListeners
-
 window.addEventListener('load', () => {
   
   addOne.addEventListener('click', () => {
@@ -77,8 +69,6 @@ window.addEventListener('load', () => {
     total()
   })
 
-  
-
   sendFrom.onsubmit = (e) => {
     e.preventDefault();
     submitForm()
@@ -86,8 +76,7 @@ window.addEventListener('load', () => {
 
 })
 
-
-
+// Reset checkout items
 // const resetItems = () => {
 //   productOne.innerText = 1;
 //   productTwo.innerText = 1;
