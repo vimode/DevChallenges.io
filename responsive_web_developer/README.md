@@ -14,7 +14,7 @@ This path has eight challenges.
 - [ ] Portfolio
 ---
 - [x] *Name = Completed*
-- [x] *Name~~= Completed & Submitted*
+- [x] *~~Name~~= Completed & Submitted*
 ---
 ###### Current Status  
  - Working on the 'Edie homepage' challenge
