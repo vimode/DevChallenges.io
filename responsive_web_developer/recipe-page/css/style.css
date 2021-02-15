@@ -16,6 +16,9 @@ h3 {
   margin: 0 auto;
   max-width: 1020px;
 }
+.main {
+  max-width: 90vw;
+}
 
 .main-info{
   display:flex;
@@ -60,7 +63,7 @@ h3 {
 
 
 .details {
-  width: 60%;
+  width: 90%;
 }
 
 .ingredients div {
@@ -89,7 +92,7 @@ h3 {
   background:orange;
   color: #FFF;
   padding: 0 0.6em;
-  margin: 2em;
+  margin: 1.1em;
   font-weight: 600;
   border-radius:0.5em;
 }
