@@ -11,16 +11,14 @@ This path has eight challenges.
 - [x] Interior Consultant
 - [x] Recipe Page
 - [x] My Gallery
-- [ ] Checkout Page
+- [x] Checkout Page
 - [ ] Edie homepage
 - [ ] Portfolio
 
-
+*[x] Challenge Name = Completed*
+*~~[x]Challenge Name~~=  Submitted*
 ###### Current Status  
-- Almost done with the checkout page
-
+ - Working on the 'Edie homepage' challenge
 ###### Pending activities : 
 - Add screenshots for each challenge
 - README.md for each challenge
-
-
