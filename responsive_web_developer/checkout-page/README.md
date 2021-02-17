@@ -13,7 +13,8 @@
 Challenge completed  - [Live Link](https://dev-challenges-io.vimo.vercel.app/responsive_web_developer/checkout-page)
 
 ##### Pending 
-- JS needs work
+- JS  : Refactor`const changes`
+- CSS : overlay fixes + `.product_count` fixes
 - Form validation is missing
 - Proper usage of forms
 - Add screenshot of the completed challenge

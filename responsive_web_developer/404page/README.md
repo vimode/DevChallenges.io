@@ -12,4 +12,3 @@ Challenge completed - [Live link](https://dev-challenges-io.vimo.vercel.app/resp
 
 ##### Pending 
 - Add screenshot of the completed challenge
-- Edit the footer as per the rules of the challenge to submit the final version
