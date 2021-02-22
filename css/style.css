@@ -79,7 +79,7 @@ h3 {
 
 .btn:hover,
 .btn:focus {
-  background: linear-gradient(to right, #e64a19 70%, #ff8a65 100%);
+  background: linear-gradient(to right, #e64a19 80%, #ff8a65 100%);
   transform:scale(1.05);
 }
 .btn-light {
