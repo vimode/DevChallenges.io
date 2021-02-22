@@ -30,8 +30,8 @@
     </ul>
 
     <div class="ham-nav">
-      <i class="fas fa-bars"></i>
-      <i class="fas fa-times"></i>      
+      <i class="fas fa-bars menu-btn ham-open"></i>
+      <i class="fas fa-times menu-btn ham-close"></i>      
   </div>
 
   </nav><!--Navigation-->
@@ -79,7 +79,7 @@
 
       <div class="card-box">
         <span class="card-box-icon card-box-icon-red"><i class="fas fa-server"></i></span>
-          <h2 class="card-box-title"Back End</h2>
+          <h2 class="card-box-title">Back End</h2>
           <p class="card-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
           <a href="#" class="card-box-btn">Get Started</a>
       </div>
@@ -90,7 +90,7 @@
   <section class="showcase inner-container" id="gallery">
     <h1 class="showcase-title">Good design means <br>good business</h1>
 
-    <div class="gallery">
+    <div class="gallery-one">
       
       <div class="gallery-box gallery-box-low">
         <img src="/responsive_web_developer/edie-homepage/img/smarthome.jpg" alt="Active  Smarthome dashboard" class="gallery-box-image">
@@ -104,6 +104,10 @@
         <h2 class="gallery-box-title">Onboard application</h2>
       </div>
 
+
+    </div><!--gallery one-->
+
+    <div class="gallery-two">
       <div class="gallery-box gallery-box-low">
         <img src="/responsive_web_developer/edie-homepage/img/booking.png" alt="Booking system" class="gallery-box-image">
         <h4 class="gallery-box-sub">Mobile Application</h4>
@@ -115,10 +119,10 @@
         <h4 class="gallery-box-sub">Front End application</h4>
         <h2 class="gallery-box-title">Juice Product homepage</h2>
       </div>
-    </div><!--gallery-->
+    </div> <!--gallery two-->
 
     <div class="gallery-more">
-      <a href="#" class="btn">see more -> arrow</a>
+      <a href="#gallery" class="gallery-btn">see more &#129058</a>
     </div>
 
   </section> <!--showcase-->
@@ -127,11 +131,11 @@
     <div class="team-title">
       <h4 class="team-sub">Meet the team</h4>
       <h1 class="team-content">We are chilled <br>and a laidback <br>team</h1>
-      <p class="team-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="team-text">Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</p>
     </div>
 
     <div class="team-images">
-      <img src="/responsive_web_developer/edie-homepage/img/person3.png" alt="" class="team-image-left">
+      <img src="/responsive_web_developer/edie-homepage/img/person3.png" alt="" class="team-images-left">
       <div class="team-images-right">
         <img src="/responsive_web_developer/edie-homepage/img/person1.png" alt="">
         <img src="/responsive_web_developer/edie-homepage/img/person2.png" alt="">
@@ -140,7 +144,7 @@
   </section><!--team-->
 
   <section class="testimonials inner-container" id="clients">
-    <p class="testimonial-para">"Fast and outstanding results. Edie understasnds <br>their customer's needs. They have a young and <br>talented team."</p>
+    <p class="testimonials-para">"Fast and outstanding results. Edie understands <br>their customer's needs. They have a young and <br>talented team."</p>
     <div class="testimonials-user">
       <img src="/responsive_web_developer/edie-homepage/img/person4.png" alt="">
       <div class="testimonial-user-info">
@@ -166,16 +170,17 @@
       <i class="fab fa-twitter-square"></i>
     </div>
 
-    <form  class="footer-form"></form>
+    <form  class="footer-form">
     <label for="footer-email">Want us to contact your?</label>
     <div class="form-group">
       <input type="email" name="email" placeholder="Email" id="footer-email" required="">
       <input type="submit" value="join">
     </div>
+  </form>
 
 
   </footer>
-  <p class="dev"> Made by ppusher, code available on <a href="https://github.com/ppusher/DevChallenges.io">Github</a></p>
+  <p class="footer-credits"> Made by ppusher @<a href="https://github.com/ppusher/DevChallenges.io">Github</a></p>
 </body>
 
 <script src="/responsive_web_developer/edie-homepage/script.js"></script>
