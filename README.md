@@ -12,8 +12,8 @@ This [path](https://devchallenges.io/paths/responsiveWebPaths) has eight challen
 - [x] Interior Consultant
 - [x] Recipe Page
 - [x] My Gallery
-- [ ] Checkout Page
-- [ ] Edie homepage
+- [x] Checkout Page
+- [x] Edie homepage
 - [ ] Portfolio
 
 ###### Current Status  
