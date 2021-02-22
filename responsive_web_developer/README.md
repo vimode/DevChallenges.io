@@ -1,6 +1,6 @@
 ### Responsive Web Developer Path 
 
-Path [showcase page](https://dev-challenges-io.vimo.vercel.app/responsive_web_developer/)
+Path [showcase page](https://dev-challenges-io.vercel.app/responsive_web_developer/)
 
 This path has eight challenges. 
 
@@ -10,7 +10,7 @@ This path has eight challenges.
 - [x] ~~Recipe Page~~
 - [x] ~~My Gallery~~
 - [x] Checkout Page
-- [ ] Edie homepage
+- [x] Edie homepage
 - [ ] Portfolio
 ---
 - [x] *Name = Completed*
