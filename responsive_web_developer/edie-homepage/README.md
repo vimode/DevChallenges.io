@@ -9,7 +9,7 @@
 Surprise me with mobile navigation.
 
 #### Status
-Completed
+Challenge Completed - [Live link](https://dev-challenges-io.vercel.app/responsive_web_developer/edie-homepage)
 
 ##### Pending 
 - Add screenshot of the completed challenge
