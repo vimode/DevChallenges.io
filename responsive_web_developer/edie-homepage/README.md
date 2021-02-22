@@ -9,7 +9,7 @@
 Surprise me with mobile navigation.
 
 #### Status
-Initiated 
+Completed
 
 ##### Pending 
 - Add screenshot of the completed challenge
