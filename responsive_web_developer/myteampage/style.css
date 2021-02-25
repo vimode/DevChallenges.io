@@ -62,11 +62,13 @@ h3 {
   grid-template-rows: 1fr 1fr;
   grid-template-areas : 
   "one two three"
-  "four five six";
-  
+  "four five six"; 
 }
 
-.profile {margin-top: 3em;}
+.profile {
+  margin-top: 3em;
+  position:relative;
+}
 
 .photo-one {grid-area: one;}
 
@@ -80,26 +82,20 @@ h3 {
 
 .photo-five {
   grid-area: five;
-  margin-top: 8em;}
+  margin-top: 8em;
+}
 
 .photo-six {grid-area: six;}
 
 .vertical-text {
-  position:relative;
-  width:200px; 
+  position:absolute;
+  width:100%; 
   text-transform: uppercase;
-  font-size: 12px;
-}
-
-/* .vertical-text > p {
-  position: absolute;
+  font-size: 1rem;
   transform: rotate(90deg);
-} */
-
-/* .vertical-text > p {
-  writing-mode: vertical-lr;
-  position: absolute;
-} */
+  top: 28%;
+  left:34%;
+}
  
 /* FOOTER */
 
