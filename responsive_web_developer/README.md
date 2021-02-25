@@ -5,7 +5,7 @@ Path [showcase page](https://dev-challenges-io.vercel.app/responsive_web_develop
 This path has eight challenges. 
 
 - [x] ~~404 Not Found~~
-- [x] My team page
+- [x] ~~My team page~~
 - [x] Interior Consultant
 - [x] ~~Recipe Page~~
 - [x] ~~My Gallery~~
