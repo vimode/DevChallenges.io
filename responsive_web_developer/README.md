@@ -6,11 +6,11 @@ This path has eight challenges.
 
 - [x] ~~404 Not Found~~
 - [x] ~~My team page~~
-- [x] Interior Consultant
+- [x] ~~Interior Consultant~~
 - [x] ~~Recipe Page~~
 - [x] ~~My Gallery~~
 - [x] Checkout Page
-- [x] Edie homepage
+- [x] ~~Edie homepage~~
 - [ ] Portfolio
 ---
 - [x] *Name = Completed*
