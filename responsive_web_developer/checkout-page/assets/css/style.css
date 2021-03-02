@@ -166,12 +166,13 @@ footer {
 
 .product_count{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border :1px solid #828282;
   border-radius: 1.2rem;
-  width: 10rem;
+  width: 8rem;
   height: 3rem;
-  font-weight: 600;
+  margin-left:0.5rem;
+  font-weight: 500;
   font-size: 0.9rem;
   padding: 0.8em;
   align-items: center;
