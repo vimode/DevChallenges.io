@@ -13,12 +13,469 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
-a{
+body { 
+  background:#fff;
+  max-width: 1920px;
+  line-height:2rem;
+  color : #333;
+}
+
+header {
+  height: 10vh;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+a {
   text-decoration: none;
+  color :#2F80ED;
 }
 
-img {
-  width: 10%;
+.skills-title,
+.exp h2,
+.projects h2,
+.hobbies h2,
+.main-blog h2 {text-transform: uppercase;}
+
+/* ===  NAVBAR  === */
+
+.main-nav {
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  padding: 1rem;
+  position:fixed;
+  width: 100%;
+  height: 5rem;
+  background: #fff;
 }
+
+.nav-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 2rem;
+}
+
+.nav-items {
+  display:flex;
+  list-style:none;
+}
+
+.nav-item {
+  padding: 0 1rem;
+}
+
+.nav-item-link{
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.nav-item-link:hover,
+.nav-item-link:focus {
+  border-bottom: 0.1rem solid #333;
+}
+
+.mobile-nav {
+  display:none;
+}
+@media (max-width: 700px) {
+
+  .main-nav {
+    width: 95%;
+  }
+  .mobile-nav {
+    display:flex;
+    flex-direction:column;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+  }
+
+  #close-nav {
+    display:none;
+  }
+  
+  .nav-items {
+    /* display:none; */
+    flex-direction: column;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 30%;
+    align-items: center;
+    opacity: 0.8;
+    background :#333;
+    transition: all 1s; 
+  }
+
+  .nav-item {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  .nav-item-link {
+    color: #fff;
+  }
+
+  .nav-item-link:hover,
+  .nav-item-link:focus {
+  border-bottom: 0.1rem solid #fff;
+  }
+ 
+}
+/* ===  CONTAINER  === */
+
+.container {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+/* ===  CARDS  === */
+
+.cards {
+  display:grid;
+  grid-template-areas : 
+  "profile  profile "
+  "skills     exp   "
+  "projects projects"
+  "hobbies     blog  ";
+  gap: 2rem;
+}
+
+.card { 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+}
+
+/* ===  HERO PROFILE  === */
+
+.hero-profile {
+  grid-area: profile;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr)
+}
+
+.hero-img{
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.hero-img img {
+  width: 80%;
+}
+
+.hero-name p {
+  color :#828282;
+}
+
+.hero-contact-email,
+.hero-contact-phone {
+  display:flex;
+  gap:0.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  font-size:0.9rem;
+  width: 90%
+}
+
+.hero-content {
+  grid-column: 2/4;
+}
+/* ===  BLOG  === */
+
+.main-blog {
+  grid-area: blog;
+  display:grid;
+  grid-template-columns : 30% 70%;
+  grid-template-rows: 10% auto auto auto;
+  align-content: space-around;
+}
+
+.blog-image {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.main-blog img { 
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.blog-title {
+  font-size:1.5rem;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.blog-content {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.blog-source {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+/* ===  SKILLS  === */
+
+.skills {
+  grid-area: skills;
+}
+
+.skills-bar {
+  margin-top: 2rem;
+  display:flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items:center;
+}
+
+.skills-bar p {
+  width: 30%;
+}
+
+.skills-bar-gray {
+  background:#c7c6c6;
+  width: 100%;
+  height:0.8rem;
+  border-radius: 1rem;
+}
+
+.skills-bar-blue {
+  background: #2F80ED;
+  height:0.8rem;
+  border-radius: 1rem;
+}
+
+.skills-html > .skills-bar-gray > .skills-bar-blue {width: 80%;}
+.skills-css > .skills-bar-gray > .skills-bar-blue {width: 70%;}
+.skills-js > .skills-bar-gray > .skills-bar-blue {width: 60%;}
+.skills-react > .skills-bar-gray > .skills-bar-blue {width: 50%;}
+.skills-vue > .skills-bar-gray > .skills-bar-blue {width: 40%;}
+
+/* ===  EXP  === */
+
+.exp {
+  grid-area: exp;
+  display:flex;
+  flex-direction:column;
+}
+
+.exp-block {
+  display:grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 10% 20% 80%;
+  align-items:center;
+  margin: 3rem 0;
+}
+.exp-block-img {
+  grid-row: 1/4;
+  grid-column: 1/3;
+  align-self: center;
+}
+
+.exp-block img {
+  width: 10%;
+  height: auto;
+}
+
+.exp-date {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #828282;
+}
+
+.exp-pos {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-weight: 600;
+}
+
+.exp-content {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  margin-top:1rem;
+}
+
+
+/* ===  PROJECTS  === */
+
+.projects {
+  grid-area: projects;
+  display: flex;
+  flex-direction:column;
+}
+
+.projects-tab {
+  display:flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.project-tab-item {
+  border : 0.1rem solid #333;
+  padding: 0.1rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.projects-cards {
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+
+.projects-cards-item-img > img {
+  width: 90%;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+}
+
+.project-cards-item-tags {
+  margin: 1rem 0;
+}
+
+.projects-cards-item p:nth-child(4) {
+  margin: 1rem 0;
+  padding-right: 1rem;
+}
+
+.btn {
+  display:inline-block;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
+  border-radius:0.8rem;
+  box-shadow: 0px 5px 0px 0px #b2b1b1;
+  border: 0.1rem solid #2F80ED;
+  margin-bottom: 1rem;
+}
+
+
+.btn-blue {
+  background: #2F80ED;
+  color:#fff;
+}
+.btn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  background: #fff;
+  color: #2F80ED;
+}
+
+.btn-light {
+  border : 0.1rem solid #2F80ED;
+}
+
+.btn-light:hover,
+.btn-light:focus{
+  background: #2F80ED;
+  color:#fff;
+}
+
+/* ===  HOBBIES  === */
+
+.hobbies {
+  grid-area : hobbies;
+}
+
+.hobbies-block {
+  display:flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.hobbies-block h3 {font-weight: 500;}
+
+.hobbies-block img {
+  width: 100%;
+  object-fit: cover;
+  height: 10rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+/* ===  FOOTER  === */
+footer {
+  text-align: center;
+  margin: 2em 0 2em;
+  color: #A9A9A9;
+  font-size: 14px;
+}
+
+
+/* ===  MEDIA QUERIES  === */
+
+@media (max-width:900px) {
+
+  .cards {
+    grid-template-areas: 
+    "profile"
+    "  exp  "
+    "projects"
+    " skills "
+     " blog "
+     "hobbies";
+  }
+
+  .hero-profile {
+    grid-template-rows: 10% 10% 30% 50%;
+    grid-template-columns: 40% auto;
+    gap: 1rem;
+  }
+
+  .hero-name {
+    grid-column:1/2;
+    grid-row:1/2;
+    
+  }
+  
+  .hero-contact {
+    grid-column:1/2;
+    grid-row:2/3;
+    margin: 0.5rem 0;
+  }
+
+  .hero-contact-email,
+  .hero-contact-phone {
+    justify-content:flex-start;
+  }
+  
+  .hero-img{
+    grid-column:1/2;
+    grid-row:3/4;
+    margin: 2rem 0;
+  }
+
+  .hero-img{
+    width: 100%;
+  }
+  
+  .hero-content{
+    grid-column:2/3;
+    grid-row:2/4;
+  }
+
+  
+}
+
+
+
+
+
