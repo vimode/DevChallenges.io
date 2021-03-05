@@ -14,7 +14,7 @@ This [path](https://devchallenges.io/paths/responsiveWebPaths) has eight challen
 - [x] My Gallery
 - [x] Checkout Page
 - [x] Edie homepage
-- [ ] Portfolio
+- [x] Portfolio
 
 ###### Current Status  
 - Busy completing the 'Responsive Web Developer' path.
