@@ -18,7 +18,7 @@ body {
 header {height: 10vh;}
 h1, h2 {font-weight: 600;}
 
-.skills-title,
+.skills h2,
 .exp h2,
 .projects h2,
 .hobbies h2,
@@ -85,7 +85,7 @@ a {
   #close-nav {display:none;}
   
   .nav-items {
-    display:none;
+    visibility:hidden;
     flex-direction: column;
     position:fixed;
     top: 0;
@@ -95,7 +95,6 @@ a {
     align-items: center;
     opacity: 0.8;
     background :#333;
-    transition: all 1s; 
   }
 
   .nav-item {
@@ -161,7 +160,6 @@ a {
 }
 
 .hero-content {grid-column: 2/4;}
-
 
 /* ===  BLOG  === */
 
@@ -280,7 +278,6 @@ a {
   margin-top:1rem;
 }
 
-
 /* ===  PROJECTS  === */
 
 .projects {
@@ -395,8 +392,8 @@ footer {
     "  exp  "
     "projects"
     " skills "
-     " blog "
-     "hobbies";
+    "  blog  "
+    " hobbies";
   }
 
   /* HERO PROFILE */
@@ -440,7 +437,6 @@ footer {
 @media (max-width: 700px) {
 
   /* HERO PROFILE */
-
   .hero-profile {
     grid-template-rows: 10% 10% auto auto;
     grid-template-columns: 1fr;
