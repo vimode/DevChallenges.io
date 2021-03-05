@@ -11,7 +11,7 @@ This path has eight challenges.
 - [x] ~~My Gallery~~
 - [x] Checkout Page
 - [x] ~~Edie homepage~~
-- [ ] Portfolio
+- [x] Portfolio
 ---
 - [x] *Name = Completed*
 - [x] *~~Name~~= Completed & Submitted*
