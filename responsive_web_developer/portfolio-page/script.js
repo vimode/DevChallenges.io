@@ -62,12 +62,11 @@ filters.forEach((filter) => {
 // filters.forEach((filter)=> {
 //   filter.addEventListener('click', () => {
 //     let filterValue = filter.innerText;
-//     console.log(filterValue)
-
+ 
 //     if (filterValue !== "CSS") {
 //         css.forEach((item)=> {
-//           css.classList.toggle('hidden')
-//     })
+//           item.classList.toggle('hidden')
+//         })
 //       } else if (filterValue !== "Responsive") {
 //         responsive.forEach((item)=> {
 //           item.classList.toggle('hidden')
@@ -76,6 +75,8 @@ filters.forEach((filter) => {
 //         html.forEach((item)=> {
 //           item.classList.toggle('hidden');
 //         })
+//       } else {
+//         parentNode.classList.toggle('hidden');
 //       }
 //   })
 // })
