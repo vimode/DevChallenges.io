@@ -11,6 +11,7 @@ function openNav() {
   navItems.style.visibility = "visible";
   navClose.style.display = "block";
   navOpen.style.display = "none";
+  linkClose()
 }
 
 function closeNav() {
@@ -20,8 +21,10 @@ function closeNav() {
 }
 
 const navLink = document.querySelectorAll('.nav-item');
-for (link of navLink) {
-  link.addEventListener('click', closeNav)
+function linkClose() {
+  for (link of navLink) {
+    link.addEventListener('click', closeNav)
+  }
 }
 
 // PROJECT FILTER
@@ -61,15 +64,15 @@ filters.forEach((filter) => {
 //     let filterValue = filter.innerText;
 //     console.log(filterValue)
 
-//     if (filterValue == "CSS") {
+//     if (filterValue !== "CSS") {
 //         css.forEach((item)=> {
 //           css.classList.toggle('hidden')
 //     })
-//       } else if (filterValue == "Responsive") {
+//       } else if (filterValue !== "Responsive") {
 //         responsive.forEach((item)=> {
 //           item.classList.toggle('hidden')
 //         })
-//       } else  {
+//       } else if (filterValue !== "HTML") {
 //         html.forEach((item)=> {
 //           item.classList.toggle('hidden');
 //         })
