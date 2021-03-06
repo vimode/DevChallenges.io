@@ -29,6 +29,15 @@ a {
   color :#2F80ED;
 }
 
+.hidden {
+  display: none;
+}
+
+.active {
+  display:block;
+}
+ 
+
 /* ===  NAVBAR  === */
 
 .main-nav {
@@ -293,12 +302,19 @@ a {
   margin: 1rem 0;
 }
 
-.project-tab-item {
+button {
   border : 0.1rem solid #333;
-  padding: 0.1rem 0.8rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
+button:hover,
+button:focus, 
+button:active{
+  background :#2F80ED;
+  color:#fff;
+}
 .projects-cards {
   display:grid;
   grid-template-columns: repeat(3,1fr);
