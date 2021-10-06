@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background : ##ffff;
+  background : #ffff;
   color: #4f4f4f;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -10,7 +10,7 @@ h3 {
   font-weight: 300;
   font-style: italic;
 }
- 
+
 .container {
   width: 90%;
   margin: 0 auto;
