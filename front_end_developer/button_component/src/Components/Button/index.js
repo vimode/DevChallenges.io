@@ -11,8 +11,6 @@ const Button = props => {
   const size = props.size ? `${props.size}` : '';
   const buttonText = disabled ? 'Disabled' : color === 'secondary' ? 'Secondary' : color === "danger" ? 'Danger' : 'Default';
   const icon = props.endIcon || props.startIcon ? "icon" : '';
-  const startIcon = props.startIcon;
-  const endIcon = props.endIcon;
 
   return (
     <button
@@ -25,7 +23,11 @@ const Button = props => {
         ${size}
         ${icon}
         ${props.className}`}>
-      {startIcon}{buttonText}{endIcon}
+      {props.startIcon ? (<span className={"material-icons"}>{props.startIcon}</span>)
+        : ("")}
+      {buttonText}
+      {props.endIcon ? (<span className={"material-icons"}>{props.endIcon}</span>)
+        : ("")}
     </button>
   );
 

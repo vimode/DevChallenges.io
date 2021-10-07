@@ -98,14 +98,16 @@ const Main = () => {
           <p>${`<Button startIcon="local_grocery_store />`}</p>
           <Button
             bgColor="bgPrimary"
-            startIcon
+            icon
+            startIcon="local_grocery_store"
           >Default</Button>
         </div>
         <div className="inner_container">
           <p>${`<Button endIcon="local_grocery_store/>`}</p>
           <Button
             bgColor="bgPrimary"
-            endIcon
+            icon
+            endIcon="local_grocery_store"
           >Default</Button>
         </div>
       </div>

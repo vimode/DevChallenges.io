@@ -63,3 +63,9 @@ button:disabled{cursor:not-allowed;}
   height: 45px;
 }
 
+.icon {
+  display:flex;
+  place-items:center;
+  place-content:center;
+  gap: 10px;
+}
