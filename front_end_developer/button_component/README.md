@@ -46,7 +46,7 @@ User story (optional): Show button in a similar way like the design or use [Stor
 
 ### What I learned
 
-_Challenge is still WIP so this will be updated frequently during development. _
+_Challenge is still WIP so this will be updated frequently during development._
 
 This branch is the second attempt at the same button component but this time with a better understanding of the user stories of the challenge.
 
