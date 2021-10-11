@@ -25,48 +25,35 @@ const Main = () => {
       setDisabled(false)
     }
 
-
     let checker = e.target.name;
     switch (checker) {
       case 'defaultBtn':
-        btnType(checker)
-        break;
-      case 'outline':
-        btnType(checker)
-        break;
       case 'variantText':
+      case 'outline':
         btnType(checker)
         break;
       case 'disableShadow':
         setbShadow(checker)
         break;
-      case 'textDisabled' || 'disabled':
+      case 'textDisabled':
+      case 'disabled':
         setDisabled(true)
         break;
       case 'startIcon':
         setBtnStartIcon(true)
         break;
       case 'smSize':
-        btnSizer(checker)
-        break;
       case 'mdSize':
-        btnSizer(checker)
-        break;
       case 'lgSize':
         btnSizer(checker)
         break;
       case 'primaryBtn':
-        btnType(checker)
-        break;
       case 'secondaryBtn':
-        btnType(checker)
-        break;
       case 'dangerBtn':
         btnType(checker)
         break;
       default:
         console.log('01010011 01001111 01010011')
-
     }
   }
 
