@@ -46,7 +46,11 @@ User story (optional): Show button in a similar way like the design or use [Stor
 
 ### What I learned
 
-A lot. Especially that his challenge is not supposed to be done the way I currently did it.🤣 So will update this section soon and redo the challenge properly.
+_Challenge is still WIP so this will be updated frequently during development. _
+
+This branch is the second attempt at the same button component but this time with a better understanding of the user stories of the challenge.
+
+So the top button is the only one that actually changes state and the rest of the buttons below change the state of hte top button based on the type of button user clicks.
 
 ## How To Use
 

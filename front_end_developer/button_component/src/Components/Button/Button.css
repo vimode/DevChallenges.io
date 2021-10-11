@@ -1,17 +1,21 @@
-button {
-  width: 100px;
-  height: 30px;
+button,
+.defaultBtn {
+  font-family: inherit;
+  width: 85px;
+  height: 35px;
   background-color: #e0e0e0;
   border:none;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 500;
   cursor:pointer;
   box-shadow: 0px 1px 2px #aeaeae;
+  color : #455a64;
 }
 
 p{font-size:13px;}
 
-.hoverEnabled {background-color: #aeaeae;}
+.defaultBtn:hover,
+.defaultBtn:focus {background-color: #aeaeae;}
 
 .outline {
   border: 1px solid #3d5afe;
@@ -20,46 +24,55 @@ p{font-size:13px;}
 
 .primary {color :#3d5afe;}
 
-.text{background-color:transparent;}
+.variantText,
+.textDisabled {background-color:transparent;}
 
-.outline.hoverEnabled {background-color: #2962ff1a;}
+.outline:hover, 
+.outline:focus{
+  background-color: #2962ff1a;
+}
 
 .text.hoverEnabled{background-color : #2962ff1a;}
 
-.bgPrimary {
+.primaryBtn {
   background-color: #3d5afe;
   color: #fff;
 }
 
-.bgPrimary.hoverEnabled{background-color:#0039cb;}
+.primaryBtn:hover,
+.primaryBtn:focus {background-color:#0039cb;}
 
-.bgSecondary {
+.secondaryBtn {
   background-color: #455a64;
   color: #fff;
 }
 
-.bgSecondary.hoverEnabled{background-color: #1c313a;}
+.secondaryBtn:hover,
+.secondaryBtn:focus
+{background-color: #1c313a;}
 
-.bgDanger {
+.dangerBtn {
   background-color: #d32f2f;
   color: #fff;
 }
 
-.bgDanger.hoverEnabled {background-color: #9a0007;}
+.dangerBtn:hover,
+.dangerBtn:focus 
+{background-color: #9a0007;}
 
 .disableShadow{box-shadow: unset;}
 
 button:disabled{cursor:not-allowed;}
 
-.sm{width:70px;}
+.smSize{width:70px;}
 
-.md{
-  width:80px;
-  height: 35px;
+.mdSize{
+  width:85px;
+  height: 40px;
 }
 
-.lg{
-  width:90px;
+.lgSize{
+  width:100px;
   height: 45px;
 }
 
@@ -67,5 +80,9 @@ button:disabled{cursor:not-allowed;}
   display:flex;
   place-items:center;
   place-content:center;
-  gap: 10px;
+  gap: 5px;
+}
+
+.material-icons {
+  font-size: 1.2em;
 }
