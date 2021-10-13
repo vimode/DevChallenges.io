@@ -1,7 +1,7 @@
 import "./Button.css";
 
 const Button = ({
-  variant, color, disabled, boxShadow, size, leftIcon, rightIcon
+  variant, color, disabled, boxShadow, size, startIcon, endIcon, btnText
 }) => {
 
   return (
@@ -14,9 +14,9 @@ const Button = ({
       ${color}
       `}
       disabled={disabled}>
-      {leftIcon && <span className='material-icons'>{leftIcon}</span>}
-      Default
-      {rightIcon && <span className="material-icons">{rightIcon}</span>}
+      {startIcon && <span className='material-icons'>{startIcon}</span>}
+      {btnText}
+      {endIcon && <span className="material-icons">{endIcon}</span>}
     </button>
   );
 };

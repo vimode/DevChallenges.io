@@ -1,8 +1,13 @@
+*:hover,
+*:focus {
+  transition: 250ms linear;
+}
+
 button,
 .defaultBtn {
   font-family: inherit;
-  width: 85px;
-  height: 35px;
+  width: 90px;
+  height: 40px;
   background-color: #e0e0e0;
   border:none;
   border-radius: 6px;
@@ -10,12 +15,18 @@ button,
   cursor:pointer;
   box-shadow: 0px 1px 2px #aeaeae;
   color : #455a64;
+  display:flex;
+  place-items:center;
+  place-content:center;
+  gap: 5px;
 }
 
 p{font-size:13px;}
 
-.defaultBtn:hover,
-.defaultBtn:focus {background-color: #aeaeae;}
+.btn:hover,
+.btn:focus {
+  background-color: #aeaeae;
+  }
 
 .outline {
   border: 1px solid #3d5afe;
@@ -25,7 +36,9 @@ p{font-size:13px;}
 .primary {color :#3d5afe;}
 
 .variantText,
-.textDisabled {background-color:transparent;}
+.textDisabled {
+  background-color:transparent;
+}
 
 .outline:hover, 
 .outline:focus{
@@ -48,8 +61,9 @@ p{font-size:13px;}
 }
 
 .secondaryBtn:hover,
-.secondaryBtn:focus
-{background-color: #1c313a;}
+.secondaryBtn:focus{
+  background-color: #1c313a;
+}
 
 .dangerBtn {
   background-color: #d32f2f;
@@ -57,32 +71,29 @@ p{font-size:13px;}
 }
 
 .dangerBtn:hover,
-.dangerBtn:focus 
-{background-color: #9a0007;}
+.dangerBtn:focus {
+  background-color: #9a0007;
+}
 
 .disableShadow{box-shadow: unset;}
 
 button:disabled{cursor:not-allowed;}
 
-.smSize{width:70px;}
+.smSize{
+  width:80px;
+  height: 35px;
+}
 
 .mdSize{
-  width:85px;
+  width:90px;
   height: 40px;
 }
 
 .lgSize{
-  width:100px;
-  height: 45px;
-}
-
-.icon {
-  display:flex;
-  place-items:center;
-  place-content:center;
-  gap: 5px;
+  width:110px;
+  height: 50px;
 }
 
 .material-icons {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }

@@ -10,19 +10,35 @@ const Main = () => {
   const [btnSize, setbtnSize] = useState('md');
   const [disabled, setDisabled] = useState(false);
   const [bShadow, setbShadow] = useState('shadow');
-  const [btnStartIcon, setBtnStartIcon] = useState(false);
+  const [btnStartIcon, setBtnStartIcon] = useState('');
+  const [btnEndIcon, setBtnEndIcon] = useState('');
+  const [btnText, setBtnText] = useState("Default");
 
   const selectType = (e) => {
     e.preventDefault()
 
+    function resetState() {
+      setVariant("default")
+      setbtnSize("md")
+      setDisabled(false)
+      setbShadow("shadow")
+      setBtnText("Default")
+      setBtnStartIcon('')
+      setBtnEndIcon('')
+    }
+
     function btnType(checker) {
       setVariant(checker)
-      setDisabled(false)
     }
 
     function btnSizer(checker) {
       setbtnSize(checker)
-      setDisabled(false)
+    }
+
+    function btnTextSetter(checker) {
+      checker === "primaryBtn" ? setBtnText("Primary") :
+        checker === "secondaryBtn" ? setBtnText("Secondary") :
+          checker === "dangerBtn" ? setBtnText("Danger") : setBtnText("Default")
     }
 
     let checker = e.target.name;
@@ -30,27 +46,42 @@ const Main = () => {
       case 'defaultBtn':
       case 'variantText':
       case 'outline':
+        resetState()
         btnType(checker)
         break;
       case 'disableShadow':
+        resetState()
         setbShadow(checker)
         break;
       case 'textDisabled':
+        resetState()
+        setVariant("variantText")
+        setDisabled(true)
+        break;
       case 'disabled':
+        resetState()
         setDisabled(true)
         break;
       case 'startIcon':
-        setBtnStartIcon(true)
+        resetState()
+        setBtnStartIcon('local_grocery_store')
+        break;
+      case 'endIcon':
+        resetState()
+        setBtnEndIcon('local_grocery_store')
         break;
       case 'smSize':
       case 'mdSize':
       case 'lgSize':
+        resetState()
         btnSizer(checker)
         break;
       case 'primaryBtn':
       case 'secondaryBtn':
       case 'dangerBtn':
+        resetState()
         btnType(checker)
+        btnTextSetter(checker)
         break;
       default:
         console.log('01010011 01001111 01010011')
@@ -65,7 +96,9 @@ const Main = () => {
           boxShadow={bShadow}
           disabled={disabled}
           size={btnSize}
+          btnText={btnText}
           startIcon={btnStartIcon}
+          endIcon={btnEndIcon}
         />
       </div>
 
@@ -127,7 +160,8 @@ const Main = () => {
           <ActionButton
             name="startIcon"
             onClick={selectType}
-          />
+            startIcon="local_grocery_store"
+          ></ActionButton>
         </div>
 
         <div className="inner_container">
@@ -135,6 +169,7 @@ const Main = () => {
           <ActionButton
             name="endIcon"
             onClick={selectType}
+            endIcon="local_grocery_store"
           />
         </div>
 
@@ -175,6 +210,7 @@ const Main = () => {
           <ActionButton
             name="primaryBtn"
             onClick={selectType}
+            btnText="Primary"
           />
         </div>
 
@@ -183,7 +219,7 @@ const Main = () => {
           <ActionButton
             name="secondaryBtn"
             onClick={selectType}
-
+            btnText="Secondary"
           />
         </div>
 
@@ -192,6 +228,7 @@ const Main = () => {
           <ActionButton
             name="dangerBtn"
             onClick={selectType}
+            btnText="Danger"
           />
         </div>
 
