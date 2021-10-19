@@ -5,7 +5,7 @@ import MainInput from './Components/MainInput';
 import InputSelector from './Components/InputSelector';
 import DropdownSelector from './Components/DropdownSelector';
 import RadioButtonSelector from './Components/RadioButtonSelector'
-import InputTextArea from './Components/InputTextArea';
+
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
   const [actionText, setActionText] = useState("Disabled");
   const [bgColor, setBgColor] = useState('');
   const [icon, setIconChange] = useState('');
-  const [iconPos, setIconPos] = useState('startIcon');
+  // const [iconPos, setIconPos] = useState('startIcon');
 
   const icons = [
     '',
@@ -57,10 +57,6 @@ function App() {
     setIconChange(value)
   }
 
-  const handleIconPosition = (e) => {
-    setIconPos('endIcon')
-  }
-
   useEffect(() => {
     document.querySelector('.mainInput').style.backgroundColor = bgColor;
   }, [bgColor])
@@ -77,7 +73,6 @@ function App() {
           bgColor={bgColor}
           icon={icon}
           selectedIcon={icon}
-          iconPos={iconPos}
         />
       </section>
 
