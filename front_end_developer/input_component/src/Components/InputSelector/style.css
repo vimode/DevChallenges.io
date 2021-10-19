@@ -1,0 +1,5 @@
+.inputSelector {
+  display:flex;
+  gap: 5px;
+  place-items: center;
+}

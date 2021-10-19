@@ -1,0 +1,74 @@
+.MainInputForm {
+  display:flex;
+  flex-direction: column;
+  height: 80px;
+}
+
+.inputWrapper{
+  position:relative;
+  width:80%;
+}
+
+input[type="text"] {
+  font-family:inherit;
+  padding: 10px 0px 10px 35px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 70%);
+  outline:none;
+  transition: 300ms linear;
+}
+
+input[type="text"]:disabled {
+  background: hsl(0, 0%, 80%);
+  cursor: not-allowed;
+}
+
+input[type="text"]:disabled:hover{border:1px solid hsl(0, 0%, 70%);}
+
+input[type="text"]:hover {border: 1px solid hsl(0,0%, 30%);}
+
+input[type="text"]:focus {border: 1px solid hsl(255, 100%, 50%);}
+
+.medium {width: 250px;}
+
+.small {width: 100px;}
+
+.fullwidth {width: 100%;}
+
+input[type="text"].error {border: 1px solid red;}
+
+input[type="text"].helper {border: 1px solid cornflowerblue;}
+
+.smallText  {
+  font-size: 12px;
+  margin-top: 2px;
+  transition: 300ms linear;
+}
+
+.smallText.error,
+.inputFormLabel_error  {color: red;}
+
+.smallText.helper,
+.inputFormLabel_helper {color: cornflowerblue;}
+
+
+
+.inputIcons{
+  position:absolute;
+  margin: 0;
+  width: 5px;
+  top:5px;
+  left:10px;
+}
+
+.inputIcons.startIcon {
+  left: 10px;
+}
+
+.inputIcons.endIcon {
+  right: 5%;
+}
+
+
+
+
