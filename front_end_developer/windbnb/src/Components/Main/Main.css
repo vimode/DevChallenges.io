@@ -1,0 +1,54 @@
+
+
+
+
+/* ListingItem */
+.listing_wrapper {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1em;
+}
+
+.listing_item,
+.listing_details,
+.details_rest {
+  display:flex;
+}
+
+.listing_item{
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listing_details {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.details_rest {
+  place-items: center;
+  justify-content: space-between;
+}
+
+.icon_star {
+  color:hsl(0, 79%, 63%);
+  font-size: 20px;
+}
+
+.place_img{
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px;
+  height:100%;
+  border-radius: 15px;
+}
+
+.place_superhost {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: var(--fw-bold);
+}
