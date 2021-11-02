@@ -38,7 +38,9 @@ function App() {
   ]
 
   const handleDisabled = (checked) => {
+    // console.log(checked)
     setDisabledState(!disabledState)
+    console.log(!disabledState)
   }
 
   const handleSizeChange = (value) => {

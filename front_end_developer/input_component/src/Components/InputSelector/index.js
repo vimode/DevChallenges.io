@@ -20,6 +20,7 @@ const InputSelector = ({
 
     if (inputName === "disable") {
       setChecked(!checked);
+      console.log(checked)
       checkedStatus(checked)
     }
     if (type === "color") {
