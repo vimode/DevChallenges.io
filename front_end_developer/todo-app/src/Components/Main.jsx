@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 
 import Filter from './Filter.jsx';
 import TodoList from './TodoList.jsx'
@@ -40,10 +40,11 @@ const Main = () => {
       };
       updateTodos.push(newTodo);
       localStorage.setItem("todosList", JSON.stringify(updateTodos));
-      setTodos(updateTodos),
-      setCurrentInput('')
+      setTodos(updateTodos)
     }
+    setCurrentInput('')
   }
+  
 
   const updateCheck = (id) => {
       let _todosCopy = todos.map((task) => {
