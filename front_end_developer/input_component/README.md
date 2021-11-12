@@ -1,11 +1,7 @@
 <h1 align="center">Reusable Input Component</h1>
 
 <div align="center">
-  <h3>
-    <a href="https://dev-challenges-io-input-component.vercel.app/">
-      Demo
-    </a>
-    <span> | </span>
+  <h3>  
     <a href="https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp">
       Challenge
     </a>
