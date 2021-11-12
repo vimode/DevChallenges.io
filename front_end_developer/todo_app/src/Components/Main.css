@@ -1,0 +1,70 @@
+main {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.inputTaskWrapper {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+}
+
+.inputTaskWrapper input[type="text"] {
+  width: 80%;
+  border-radius: 10px;
+  padding-left: 1em;
+  border: 1px solid var(--clr-body);
+}
+
+main .todoList {
+  display:flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+main .todoList .todo  {
+  display:flex;
+  place-items:center;
+  gap: 1em;
+  font-weight: var(--fw-reg);
+}
+
+.checkbox_icon {width: max-content;}
+
+.taskTitle {width: 90%;}
+
+.completed_task {text-decoration: line-through;}
+
+/* FILTER */
+
+.filterClass {
+  padding: 12px;
+  color: var(--clr-body);
+  font-weight: var(--fw-med);
+}
+
+.allActive,
+.activeActive,
+.completedActive {
+  border-bottom: 4px solid var(--clr-primary-highlight);
+}
+
+.filter_options {
+  width: 100%;
+  border-bottom: 1px solid var(--clr-body);
+}
+
+.filter_options ul {
+  display:flex;
+  padding: 1em;
+  justify-content: space-evenly;
+}
+
+@media( max-width: 700px) {
+ 
+  .inputTaskWrapper input[type="text"] {
+    width: 70%;
+  }
+}

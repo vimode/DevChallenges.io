@@ -1,0 +1,25 @@
+button {
+  display:block;
+  font-family:inherit;
+  border-radius: 10px;
+  border: none;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.primary_button {
+  background: var(--clr-primary-highlight);
+  color: #fff;
+}
+
+.secondary_button {
+  background: var(--clr-secondary-highlight);
+  color: #fff;
+  width: 12em;
+  align-self:end;
+  display:flex;
+  place-items:center;
+  place-content: center;
+  gap: 0.5em;
+  padding: 1em;
+}

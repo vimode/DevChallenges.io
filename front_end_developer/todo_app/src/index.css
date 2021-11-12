@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+/* ROOT */
+
+:root {
+
+  --ff-primary :'Raleway', sans-serif;
+  --ff-secondary: 'Montserrat', sans-serif;
+
+  --fs-title: 36px;
+  --fs-body: 14px;
+
+  --fw-reg: 500;
+  --fw-med: 600;
+  --fw-bold: 700;
+
+  --clr-primary-highlight: #2F80ED;
+  --clr-secondary-highlight: #EB5757;
+  --clr-body: #333;
+}
+
+/* GENERAL */
+
+body {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+}
+
+
+ul li {list-style: none; }
+
+a {text-decoration: none;}
+
+/* MEDIA QUERIES */
+
