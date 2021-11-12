@@ -5,6 +5,8 @@ import Main from './Components/Main.jsx'
 
 import './App.css';
 
+import './App.css';
+
 function App () {
 
   return (
