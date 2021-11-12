@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 import './Main.css'
 
-import Todo from './Todo'
+import Todo from './Todo.jsx'
 
 const TodoList = ({todos,updateCheckbox, setFilter,deleteTask}) => {
 

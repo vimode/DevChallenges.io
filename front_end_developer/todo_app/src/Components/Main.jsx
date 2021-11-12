@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
 
-import Filter from './Filter';
-import TodoList from './TodoList'
+import Filter from './Filter.jsx';
+import TodoList from './TodoList.jsx'
 
-import InputField from '../Elements/InputField';
-import Button from '../Elements/Button';
+import InputField from '../Elements/InputField.jsx';
+import Button from '../Elements/Button.jsx';
 
 import './Main.css'
 

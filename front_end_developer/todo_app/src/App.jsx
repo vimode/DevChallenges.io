@@ -1,17 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-import Header from './Components/Header';
-import Main from './Components/Main'
+import Header from './Components/Header.jsx';
+import Main from './Components/Main.jsx'
 
 import './App.css';
 
 function App () {
 
   return (
-    <>
-    <Header />
-    <Main/>   
-    </>
+
+    <div className = "App">
+      <Header />
+      <Main/>   
+    </div>
   )
 
 }
