@@ -40,11 +40,10 @@ const Main = () => {
       };
       updateTodos.push(newTodo);
       localStorage.setItem("todosList", JSON.stringify(updateTodos));
-      setTodos(updateTodos)
+      setTodos(updateTodos),
+      setCurrentInput('')
     }
-    setCurrentInput('')
   }
-  
 
   const updateCheck = (id) => {
       let _todosCopy = todos.map((task) => {
