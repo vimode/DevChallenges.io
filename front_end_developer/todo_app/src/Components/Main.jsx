@@ -40,9 +40,9 @@ const Main = () => {
       };
       updateTodos.push(newTodo);
       localStorage.setItem("todosList", JSON.stringify(updateTodos));
-      setTodos(updateTodos),
-      setCurrentInput('')
+      setTodos(updateTodos)
     }
+    setCurrentInput('')
   }
 
   const updateCheck = (id) => {
