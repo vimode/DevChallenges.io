@@ -10,13 +10,13 @@ const Todo = ({title, id, completed, deleteTask, setFilter, updateCheckbox}) => 
   return (
     <li className="todo">
       
-      {setFilter != 'Active' && completed ? (
+      {setFilter !== 'Active' && completed ? (
         <span
         className = "material-icons checkbox_icon selected-checkbox"
         onClick={()=> {updateCheckbox(id)}}>
           check_box</span>
       ) : 
-      setFilter != 'Completed' && !completed ? (
+      setFilter !== 'Completed' && !completed ? (
         <span
         className = "material-icons  checkbox_icon blank-checkbox"
         onClick={()=> {updateCheckbox(id)}}>

@@ -44,6 +44,7 @@ const Main = () => {
     }
     setCurrentInput('')
   }
+  
 
   const updateCheck = (id) => {
       let _todosCopy = todos.map((task) => {
@@ -74,7 +75,7 @@ const Main = () => {
         setActive = {handleActiveFilter}
         setFilter = {selectedFilter}
       />
-    {selectedFilter  != 'Completed' && 
+    {selectedFilter  !== 'Completed' && 
     (<form className= "inputTaskWrapper">
     <InputField
       inputType = "text"
