@@ -52,6 +52,8 @@ This branch is the second attempt at the same button component but this time wit
 
 So the top button is the only one that actually changes state and the rest of the buttons below change the state of hte top button based on the type of button user clicks.
 
+The main branch is the figma design replication.
+
 ## How To Use
 
 <!-- This is an example, please update according to your application -->
