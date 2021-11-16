@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ROOT */
+
+:root {
+  
+}
+
+
+/* GENERAL */
+
+
+body{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+  display:block;
+}
+
+ul li {list-style:none;}
+
+.btn {
+  display:block;
+  font-family:inherit;
+  cursor: pointer;
+}

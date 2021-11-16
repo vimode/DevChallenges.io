@@ -1,0 +1,61 @@
+.cardList {
+  display:grid;
+  grid-template-columns: repeat(3, auto); 
+  justify-content: space-between;
+  gap: 25px;
+  margin: 0 auto;
+}
+
+.card {
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card .inner_wrapper {
+  display:flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.card .rating {
+  display:flex;
+  gap: 2px;
+  place-items:center;
+}
+
+.star_icon {color: #eb5757}
+
+.card .inner_wrapper .superHost {
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid hsl(0, 0%,10%);
+  padding: 3px 6px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+}
+
+.img_wrapper img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+
+@media(max-width: 1200px) {
+  .cardList {width: 100%;}
+}
+
+@media(max-width: 900px) {
+  .cardList {
+    grid-template-columns: repeat(2, auto);
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 650px ) {
+  .cardList {grid-template-columns: 1fr;}
+}
