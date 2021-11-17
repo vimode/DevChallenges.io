@@ -12,7 +12,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](button-screenshot.png)
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) was to build an application to complete the given user stories.
 
@@ -42,7 +42,13 @@ User story (optional): Show button in a similar way like the design or use [Stor
 
 ### What I learned
 
-A lot. Especially that his challenge is not supposed to be done the way I currently did it.🤣 So will update this section soon and redo the challenge properly.
+_Challenge is still WIP so this will be updated frequently during development._
+
+This branch is the second attempt at the same button component but this time with a better understanding of the user stories of the challenge.
+
+So the top button is the only one that actually changes state and the rest of the buttons below change the state of hte top button based on the type of button user clicks.
+
+The main branch is the figma design replication.
 
 ## How To Use
 
