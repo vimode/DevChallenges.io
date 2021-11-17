@@ -2,10 +2,6 @@
 
 <div align="center">
   <h3>
-    <a href="https://dev-challenges-io-button-component-2.vercel.app/">
-      Demo
-    </a>
-    <span> | </span>
     <a href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY">
       Challenge
     </a>
