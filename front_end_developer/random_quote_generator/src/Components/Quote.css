@@ -1,0 +1,88 @@
+.quote_outer_wrapper {
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.quote_text { 
+  padding: 0 10%;
+  border:none;
+  border-left: 10px solid var(--clr-highlight);
+  font-size: var(--fs-body);
+  color: var(--clr-body);
+  line-height: var(--lh-body);
+  margin: 10% 0;
+}
+
+.quote_author_wrapper {
+  display:flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 8%;
+}
+
+.quote_author {
+  color: var(--clr-title-text);
+  font-size: var(--fs-title);
+  line-height: var(--lh-title);
+  font-weight: var(--fw-bold);
+  padding: 1.5em 1em;
+}
+
+.quote_tags {
+  color: var(--clr-alt-text);
+  font-size: var(--fs-alt-text);
+  line-height: var(--lh-alt-text);
+  font-weight: var(--fw-reg);
+}
+
+.quoteList_author {
+  margin-bottom: 100px;
+  padding: 0 10%;
+}
+
+.quote_author_wrapper:hover {
+  background: var(--clr-alt-dark-bg);
+  cursor: pointer;
+  transition: background 500ms;
+}
+
+.quote_author_wrapper:hover > .quote_author {
+  color: var(--clr-alt-title-text);  
+  transition: background 500ms;
+}
+
+.quote_author_wrapper:hover .quote_tags {
+  color: var(--clr-alt-text);
+  transition: background 500ms;
+}
+
+.quote_icon { margin: auto 5%;}
+
+.quote_author_wrapper:hover .quote_icon {
+  color: var(--clr-alt-arrow);
+  transition: background 500ms;
+}
+
+.loading_icon {
+  position:absolute;
+  right: 50%;
+  top: 50%;
+  z-index: 100;
+  width: 80px;
+  height: 80px;
+  border: 10px solid var(--clr-alt-arrow);
+  border-right: 10px solid var(--clr-highlight);
+  border-radius:50%;
+  animation: spinner 1s  linear infinite;
+}
+
+/* css animations */
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

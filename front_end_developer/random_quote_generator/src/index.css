@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+/* ROOT */
+
+:root { 
+  --ff-primary : 'Raleway', sans-serif;
+
+  --fw-reg : 500;
+  --fw-bold: 700;
+
+  --fs-body : 36px;
+  --fs-title: 24px;
+  --fs-alt-text: 14px;
+  --fs-button-text: 18px; 
+
+
+  --clr-highlight : hsl(45, 86%, 77%);
+  --clr-body : hsl(0, 0%, 0%);
+  --clr-title-text: hsl(0, 0%, 31%);
+  --clr-alt-title-text: hsl(0, 0%, 95%);
+  --clr-alt-text: hsl(0, 51%, 1%);
+  --clr-alt-dark-bg: hsl(0, 0%, 20%);
+  --clr-att : hsl(0, 0%, 90%);
+  
+  --clr-alt-arrow: hsl(0, 0%, 95%);
+  
+  --lh-body: 43.2px;
+  --lh-title: 28.18px;
+  --lh-alt-text: 16.44px;
+  --lh-button-text: 21.6px;
+}
+
+body { 
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+}

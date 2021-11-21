@@ -1,0 +1,23 @@
+.app_header_wrapper {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.random-button {
+  font-size: var(--fs-button-text);
+  display:flex;
+  line-height: var(--lh-button-text);
+  font-weight: var(--fw-reg);
+  gap: 5px;
+}
+
+
+.random-button:hover {
+  cursor: pointer;
+  opacity :0.6;
+  transition: opacity 350ms linear;
+}
+
+.random-button span {color: var(--clr-title-text);}
+
+.random-button .renew {color : var(--clr-alt-dark-bg);}

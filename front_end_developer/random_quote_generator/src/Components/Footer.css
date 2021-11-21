@@ -1,0 +1,11 @@
+.att{
+  color : var(--clr-att);
+  font-size: var(--fs-alt-text);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.att a {
+  color:var(--clr-att);
+  font-weight: var(--fw-bold);
+}
