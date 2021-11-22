@@ -1,4 +1,10 @@
 .quote_outer_wrapper {
+  display:flex;
+  width: 100%;
+  place-content: center;
+}
+
+.quote_inner_wrapper {
   min-width: 300px;
   max-width: 600px;
 }
@@ -36,8 +42,16 @@
 }
 
 .quoteList_author {
+  display:flex;
+  place-items: center;
+  gap: 10px;
   margin-bottom: 100px;
   padding: 0 10%;
+}
+
+.chevron_back {
+  font-size: 2rem;
+  cursor:pointer;
 }
 
 .quote_author_wrapper:hover {
@@ -65,8 +79,7 @@
 
 .loading_icon {
   position:absolute;
-  right: 50%;
-  top: 50%;
+  top: 40%;
   z-index: 100;
   width: 80px;
   height: 80px;
