@@ -16,7 +16,7 @@ function App() {
   const options_index = ['A ', 'B ', 'C ', 'D '];
 
 
-  const [questionData, setQuestionData] = useState(); //all the fetches questions w/ relevant data
+  const [questionData, setQuestionData] = useState(); //all the fetched questions w/ relevant data
   const [quizQuestion, setQuizQuestion] = useState(); // the single current quiz Q
   const [allOptions, setAllOptions] = useState(); // 4 options to choose from 
   const [questionCount, setQuestionCount] = useState(0); // question counter

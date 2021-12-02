@@ -24,16 +24,16 @@ const QuizCard = ({image1, quizQuestion, allOptions, isOptionSelected, handleOpt
             "selected" : ""}`: 
             "alt_highlight_option"}`}
         onClick={(e) => handleOptionClick(e)}
-        disabled={isOptionSelected}
+        disabled={isOptionSelected} // once option is clicked all the options are disabled
         >
         {option}
-        
+        {/* ✔ */}
         {option === quizQuestion.answer && isOptionSelected 
           && (
           <span className="material-icons">
           check_circle_outline</span>)
         }
-        
+        {/* ✖ */}
         {option !== quizQuestion.answer &&otherOptionSelected && (
           <span className="material-icons">
           highlight_off</span>)

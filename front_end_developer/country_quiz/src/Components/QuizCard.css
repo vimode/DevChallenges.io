@@ -78,3 +78,7 @@
   background: var(--clr-hover);
   border: 2px solid var(--clr-hover);
 }
+
+.quiz_option:disabled {
+  pointer-events: none;
+}

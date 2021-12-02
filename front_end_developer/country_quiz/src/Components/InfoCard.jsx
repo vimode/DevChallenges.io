@@ -2,7 +2,7 @@ import React from 'react';
 
 import './InfoCard.css';
 
-const InfoCard = ({imgSrc, buttonText, startQuiz, titleText, scoreText, scorePage, score}) => {
+const InfoCard = ({imgSrc, buttonText, startQuiz, titleText, scorePage, score}) => {
   return (
     <>
     <div className="card">
