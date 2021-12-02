@@ -6,7 +6,7 @@
   place-items:center;
   place-content: center;
   gap: 1em;
-  width: 80%;
+  width: 90%;
   max-width: 550px;
   margin: 0 auto;
 }
@@ -16,7 +16,7 @@
   flex-direction: column;
   place-content: center;
   background: var(--clr-body);
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   height: 80%;
   max-height: 600px;
@@ -42,13 +42,12 @@
 
 .start_button, .quiz_button {
   text-align:center;
-  padding: 20px 60px;
+  padding: 1em 3em;
   border-radius: 10px;
   border:2px solid var(--clr-q-title);
   background: var(--clr-body);
   transition: background 300ms linear;
 }
-
 
 .loading_icon {
   position:absolute;
@@ -71,5 +70,15 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+/* MEDIA */
+
+@media(max-width: 500px) {
+  .quiz_heading {
+    max-width: 8ch;
+    line-height: 1em;
   }
 }

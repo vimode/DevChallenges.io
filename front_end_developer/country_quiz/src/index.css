@@ -68,3 +68,24 @@ button {
   line-height: var(--lh-btn);
   cursor:pointer;
 }
+
+@media(max-width: 500px ) {
+
+  :root { 
+    --fs-body: 16px;
+    --fs-h1: 30px;
+    --fs-q-title: 22px;
+    --fs-alt-title: 44px;
+    --fs-alt-text: 22px;
+    --fs-btn: 16px;
+      
+    --lh-body: 25px;
+    --lh-h1: 50px;
+    --lh-q-title: 32px;
+    --lh-alt-title: 68px;
+    --lh-alt-text: 50px;
+    --lh-btn: 25px;
+  }
+
+}
+
