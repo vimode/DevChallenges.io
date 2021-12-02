@@ -27,8 +27,11 @@
 ### Experience and Learning
 
 [Optional Chaning(?.)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
 [Generate a sequence of numbers using Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#using_arrow_functions_and_array.from)
+
 [array.find() to return value of first element that satisfies the testing func](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find#syntax)
+
 [array.findIndex() to return index of first element that satisfies the testing func](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex#syntax)
 
 ## How To Use
