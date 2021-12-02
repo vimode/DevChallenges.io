@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0 ;
+  margin: 0;
+}
+
+:root {
+
+  --ff-primary: 'Poppins', sans-serif;
+  
+  --fw-med: 500;
+  --fw-bold: 700;
+
+  --fs-body: 18px;
+  --fs-h1: 36px;
+  --fs-q-title: 24px;
+  --fs-alt-title: 48px;
+  --fs-alt-text: 26px;
+  --fs-btn: 18px;
+    
+  --lh-body: 27px;
+  --lh-h1: 54px;
+  --lh-q-title: 36px;
+  --lh-alt-title: 72px;
+  --lh-alt-text: 54px;
+  --lh-btn: 27px;
+
+  --clr-q-title : hsla(212, 45%, 33%, 1);
+  --clr-title: hsla(0, 0%, 95%, 1);
+  --clr-body : hsla(0, 0%, 100%, 1);
+  --clr-hover: hsla(37, 95%, 56%, 1);
+  --clr-highlight: hsla(145, 43%, 56%, 1);
+  --clr-alt-highlight: hsla(0, 71%, 71%, 1);
+
+}
+
+/* GENERAL */
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-med);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  height: 100vh;
+  width: 100vw;
+  background: url(./assets/background.png) no-repeat center;
+  color:var(--clr-title);
+}
+
+img, svg {
+  display:block;
+  width: 100%;
+}
+
+button, input {
+  font:inherit;
+  display:block;
+}
+
+#root { 
+  height: 100%;
+}
+
+button {
+  font-size: var(--fs-btn);
+  line-height: var(--lh-btn);
+  cursor:pointer;
+}

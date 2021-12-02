@@ -1,0 +1,35 @@
+.card {
+  width:80%;
+}
+
+.card img {
+  /* max-width: 10em; */
+  width: 80%;
+  margin: 0 auto;
+}
+
+.start_button:hover,
+.start_button:focus{
+  background: var(--clr-hover);
+}
+
+.alt_title {
+  font-size: var(--fs-alt-title);
+  line-height: var(--lh-alt-title);
+  color: var(--clr-q-title);
+  font-weight: var(--fw-bold);
+}
+
+.alt_tet {
+  font-size: var(--fs-alt-text);
+  line-height: var(--fs-alt-text);
+  color: var(--clr-q-title);
+  font-weight: var(--fw-med);
+}
+
+.score_highlight {
+  font-size: var(--fs-alt-title);
+  line-height: var(--lh-alt-title);
+  color: var(--clr-highlight);
+  font-weight: var(--fw-bold);
+}
