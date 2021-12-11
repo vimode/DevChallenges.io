@@ -1,0 +1,208 @@
+.sidebar_outer_wrapper {
+  grid-area: sidebar;
+  background: var(--clr-sidebar-overlay-bg);
+  position:relative;
+}
+
+.sidebar_inner_wrapper {
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar_main {
+  grid: 
+  'sidebarImg' 50%
+  'weatherTemp' 20%
+  'weathertype' 10%
+  'weatherdate' 10%
+  'locationdata' 10%;
+  place-items:center;
+  height: 100%;
+}
+
+.sidebar_image_wrapper {
+  width: 100%;
+  grid-area: sidebarImg;
+  padding-block: 20px;
+  position: relative;
+}
+
+.sidebar_image_wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top:0;
+  position:absolute;
+  opacity: 0.1;
+  background: url(../../assets/Cloud-background.png) no-repeat, center;
+  background-size: cover;
+}
+
+.sidebar_img{
+  max-width: 10em;
+  margin: 0 auto;
+}
+
+.sidebar_title{
+  grid-area:weatherTemp;
+  font-size: var(--fs-sidebar-title);
+  line-height: var(--fs-sidebar-title);
+  font-weight: var(--fw-reg);
+}
+
+.sidebar_title .metric_unit {
+  font-size: var(--fs-sidebar-sub);
+  line-height: var(--lh-sidebar-sub);
+  font-weight: var(--fw-light);
+  color: var(--clr-body-alt);
+}
+
+.sidebar_text{
+  grid-area:weathertype;
+  font-size: var(--fs-sidebar-content);
+  line-height: var(--lh-sidebar-content);
+  font-weight: var(--fw-med);
+  color: var(--clr-body-alt);
+}
+
+.sidebar_date{
+  grid-area:weatherdate;
+  font-size: var(--fs-content-text);
+  line-height: var(--lh-content-text);
+  font-weight: var(--fw-reg);
+  color: var(--clr-body-alt);
+}
+
+.sidebar_location{
+  grid-area:locationdata;
+  color: var(--clr-body-alt);
+  place-content: center;
+  gap: 5px;
+}
+
+.sidebar_header {
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.sidebarButton {
+  background: var(--clr-sidebar-button-bg);
+  border: 1px solid var(--clr-sidebar-button-bg);
+  padding: 10px;
+  color: var(--clr-body-text);
+  font-size: var(--fs-sidebar-button);
+  line-height: var(--lh-sidebar-button);
+  font-weight: var(--fw-reg);
+}
+
+.locationIconButton {
+  background: var(--clr-sidebar-button-bg);
+  border: 1px solid transparent;
+  border-radius: 100%;
+  width: max-content;
+  opacity: 0.75;
+  transition: opacity 200ms linear;
+}
+
+.locationIconButton:hover,
+.locationIconButton:focus {
+  opacity: 1;
+}
+
+.locationIconButton .locationIcon {
+  font-size: 20px;
+  color: var(--clr-body-text);
+  padding: 10px;
+}
+
+/* search overlay */
+
+.overlay_outer_wrapper {
+  position:absolute;
+  z-index: 300;
+  height: 100%;
+  width: 100%;
+  background: var(--clr-sidebar-overlay-bg);
+  flex-direction: column;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.overlay_outer_wrapper .closeBtn {
+  align-self: flex-end;
+  cursor: pointer;
+  padding: 10px;
+  background : transparent;
+  border:none;
+}
+
+.overlay_outer_wrapper .closeIcon {
+  opacity: 0.5;  
+  font-size: 30px;
+  transition: 250ms opacity linear;
+}
+
+.overlay_outer_wrapper .closeIcon:hover,
+.overlay_outer_wrapper .closeIcon:focus {
+  opacity: 1;
+}
+
+.searchInput_wrapper {
+  position:relative;
+}
+
+.searchInput {
+  width: 90%;
+  padding: 10px 10px 10px 35px;
+  background: transparent;
+  border: 1px solid var(--clr-body-text);
+  color: var(--clr-body-text);
+}
+
+.searchInput_wrapper > .searchInputIcon {
+  position: absolute;
+  font-size: 30px;
+  top: 5px; left: 3px;
+}
+
+.searchInput::placeholder {
+  color: var(--clr-body-alt);
+}
+
+.searchForm {
+  justify-content:space-between;
+  gap: 10px;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background: var(--clr-search-button-bg);
+  border: 1px solid var(--clr-search-button-bg);
+  color: var(--clr-body-text);
+}
+
+.search_item {
+  padding-block: 10px;
+}
+
+.searchTerm {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--clr-body);
+  padding: 20px 10px;
+  width: 100%;
+  text-align: left;
+  transition: border 250ms linear;
+}
+
+.searchTerm:hover,
+.searchTerm:focus {
+  border: 1px solid var(--clr-body-alt);
+}
+
+@media(max-width: 700px) {
+  
+  .sidebar_outer_wrapper {
+    height: 100vh;
+  }
+}

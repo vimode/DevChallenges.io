@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+:root {
+  --ff-primary:'Raleway', sans-serif;
+
+  --fw-light: 100;
+  --fw-reg: 500;
+  --fw-med: 600;
+  --fw-bold: 700;
+
+  --fs-body: 16px;
+  --lh-body: 18px;
+  
+  --fs-sidebar-button: 16px;
+  --lh-sidebar-button: 18px;
+
+  --fs-sidebar-title: 144px;
+  --lh-sidebar-title: 169px;
+
+  --fs-sidebar-sub: 48px;
+  --lh-sidebar-sub: 56px;
+
+  --fs-sidebar-content : 36px;
+  --lh-sidebar-content : 42px;
+
+  --fs-content-text: 18px;
+  --lh-content-text: 21px;
+
+  --fs-main-title: 24px;
+  --lh-main-title: 28px;
+
+  --fs-main-small : 14px;
+  --lh-main-small : 16px;
+  
+  --fs-main-data : 64px;
+  --lh-main-data: 75px;
+
+  --fs-bar: 12px;
+  --lh-bar: 14px;
+
+  --clr-sidebar-overlay-bg: hsla(234, 32%, 17%, 1);
+  --clr-search-button-bg: hsla(236, 80%, 57%, 1);
+  --clr-sidebar-button-bg: hsl(245,11%,57%);
+  --clr-main-bg : hsla(248, 35%, 8%, 1);
+  --clr-body-text :hsl(240, 9%, 91%);
+  --clr-body-alt: hsl(243, 10%, 66%);
+  --clr-bar-bg: hsla(240, 9%, 91%, 1);
+  --clr-bar-highlight: hsla(53, 100%, 70%, 1);
+  
+}
+
+/* GENERAL */
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--clr-body-text);
+}
+
+img {
+  display:block;
+  width: 100%;
+}
+
+input, button {
+  font: inherit;
+  cursor: pointer;
+}
+
+ul li {list-style: none;}
+
+.flex_{display:flex;}
+
+.grid_{display:grid;}
+
+@media( max-width: 700px) {
+  :root {
+  
+    
+  }
+}

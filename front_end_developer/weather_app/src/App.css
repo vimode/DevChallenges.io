@@ -1,0 +1,53 @@
+.App {
+  grid: 
+  'sidebar main' 
+  'sidebar main' 
+  /30% 70%;
+  height: 100vh;
+}
+
+.material-icons {
+  color: var(--clr-sidebar-button-bg);
+  font-size: 16px;
+}
+
+.loading_icon {
+  position:absolute;
+  top: 40%;
+  z-index: 100;
+  width: 80px;
+  height: 80px;
+  border: 10px solid var(--clr-body-alt);
+  border-right: 10px solid var(--clr-search-button-bg);
+  border-radius:50%;
+  animation: spinner 1s  linear infinite;
+}
+
+.app_loading {
+  top: 50%;
+  left: 50%;
+}
+
+/* css animations */
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media(max-width: 700px) {
+
+  .App {
+    grid: 
+    'sidebar sidebar' 
+    'main main' 
+    /50% 50%;
+    height: 100%;
+  }
+  
+}
