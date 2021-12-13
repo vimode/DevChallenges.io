@@ -2,9 +2,6 @@ import React from 'react';
 
 const TodayWeatherData = ( {contentTitle, contentData, contentUnit,footerData, contentBar}) => {
 
-  const humidityValue = document.querySelector('.humidity_bar::before');
-  console.log(humidityValue)
-
   return (
 
     <div className= "weatherdata_card flex_">

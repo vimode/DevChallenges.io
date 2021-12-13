@@ -90,7 +90,7 @@ const Sidebar = ({weatherCondition, weatherTemp,  weatherMetric, weatherDay, wea
     sidebarSearchQuery(searchQuery)
     setOverlayActive(false)
   }
-    
+  
     
   return ( 
 

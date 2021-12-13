@@ -12,6 +12,11 @@ const searchLocation = (e) => {
   newSearchQuery(searchQuery)
 }
 
+// re - search from history ( use the same search query function prop)
+const searchHistoryItemAgain = (item)  => {
+  newSearchQuery(item.item)
+}
+
   return (
     <main className="overlay_outer_wrapper flex_">
         <Button
@@ -34,12 +39,12 @@ const searchLocation = (e) => {
           aria-label="search location"
           className="searchInput"
           />
-          <span class="material-icons searchInputIcon">search</span>
+          <span className="material-icons searchInputIcon">search</span>
         </div>
         
         <Button
           buttonType="searchButton"
-          handleButtonClick= {(e) => searchLocation(e)}
+          handleButtonClick= {() => searchLocation()}
           buttonText = "Search"
         />
       </form>
@@ -51,6 +56,7 @@ const searchLocation = (e) => {
                   <Button
                     buttonType="searchTerm"
                     buttonText = {item}
+                    handleButtonClick = { () => searchHistoryItemAgain({item})}
                   />
                 </li>
             )

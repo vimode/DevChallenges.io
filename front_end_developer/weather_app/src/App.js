@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-
 import Main from './Components/Main/Main';
 import Sidebar from './Components/Sidebar/Sidebar';
 
 import './App.css';
 
-
 function App() {
 
-  const [geoLocation, setGeoLocation] = useState({});
+  const [userGeoLocation, setUserGeoLocation] = useState(JSON.parse(localStorage.getItem("myLocation")) || {});
   // const [appLocation, setAppLocation] = useState({
   //   name: "London",
   //   woeid: '44418'
@@ -25,9 +23,7 @@ function App() {
   // update favicon based on weather condition of app's  location data
   useEffect(() => {
     const weatherFavicon = document.getElementById('favicon');
-
     icon ? weatherFavicon.href = `https://www.metaweather.com/static/img/weather/ico/${icon}.ico` : weatherFavicon.href = "./favicon.ico"
-
   }, [icon]);
 
   // getWeather function generates the weather forecast with the WOEID argument
@@ -53,6 +49,7 @@ function App() {
 
   // getLocation function takes geoLocation() API's lat/long to find the WOEID for getWeather(WOEID)
   let getLocation = async function (firstArg, secondArg) {
+
 
     const proxyurlOne = `https://cors-anywhere.herokuapp.com/`;
     const proxyurlTwo = `https://secret-ocean-49799.herokuapp.com/`;
@@ -83,15 +80,16 @@ function App() {
   }
 
   // seek user permission for location data
-  // user permission success! 
+  // user permission success! + store in localstorage(buggy)
   const userPermittedLocation = function (position) {
     const latt = position.coords.latitude;
     const long = position.coords.longitude;
-    setGeoLocation({
+    setUserGeoLocation({
       latitude: latt,
       longitude: long
     })
     getLocation(latt, long)
+    localStorage.setItem("myLocation", JSON.stringify(userGeoLocation));
   }
 
   // user permission denied... set location to London
@@ -109,7 +107,11 @@ function App() {
 
   //run geoLocation() API on first run
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(userPermittedLocation, userDeniedLocation)
+    if (!userGeoLocation.latitude) {
+      navigator.geolocation.getCurrentPosition(userPermittedLocation, userDeniedLocation)
+    } else {
+      getLocation(userGeoLocation.latitude, userGeoLocation.longitude);
+    }
   }, []);
 
   //update on search Query
@@ -127,6 +129,7 @@ function App() {
   const getmyLocation = () => {
     navigator.geolocation.getCurrentPosition(userPermittedLocation, userDeniedLocation)
   }
+
 
 
   return (
