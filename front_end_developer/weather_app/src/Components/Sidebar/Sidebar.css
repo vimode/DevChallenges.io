@@ -205,4 +205,8 @@
   .sidebar_outer_wrapper {
     height: 100vh;
   }
+
+  .overlay_outer_wrapper {
+    position:fixed;
+  }
 }

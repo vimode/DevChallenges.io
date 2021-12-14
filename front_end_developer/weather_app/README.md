@@ -4,7 +4,7 @@
 - onclick future forecast > update future highlights below + update sidebar props appropriately
 - on search 404 show error and keep overlay open
 - rotate compass icon based on the wind direction
-- make mobile overlay search fixed postion.
+- remove scroll bar from body when mobile search overlay is open
 
 ---
 
@@ -16,7 +16,8 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+<!--
+![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png) -->
 
 **Challenge**: Create a weather app using an API. Use Front-end libraries like React or Vue. Don’t look at the existing solution. Fulfill user stories below:
 
