@@ -4,6 +4,7 @@
 - onclick future forecast > update future highlights below + update sidebar props appropriately
 - on search 404 show error and keep overlay open
 - rotate compass icon based on the wind direction
+- make mobile overlay search fixed postion.
 
 ---
 

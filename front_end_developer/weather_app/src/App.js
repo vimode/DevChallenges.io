@@ -12,7 +12,7 @@ function App() {
   //   name: "London",
   //   woeid: '44418'
   // });
-  const [appLocation, setAppLocation] = useState();
+  const [appLocation, setAppLocation] = useState({});
   const [citySearchQuery, SetCitySearchQuery] = useState();
   const [weatherData, setWeatherData] = useState();
   const [icon, setIcon] = useState();
@@ -63,7 +63,6 @@ function App() {
           woeid: city.woeid
         }))
         setAppLocation(cities[0])
-        getWeather(cities[0].woeid)
       }
       catch (error) {
         console.log(error)
@@ -88,8 +87,6 @@ function App() {
       latitude: latt,
       longitude: long
     })
-    getLocation(latt, long)
-    localStorage.setItem("myLocation", JSON.stringify(userGeoLocation));
   }
 
   // user permission denied... set location to London
@@ -113,6 +110,22 @@ function App() {
       getLocation(userGeoLocation.latitude, userGeoLocation.longitude);
     }
   }, []);
+
+
+  //listen for userGeoLocation update and run getLocation
+  useEffect(() => {
+    getLocation(userGeoLocation.latitude, userGeoLocation.longitude)
+    localStorage.setItem("myLocation", JSON.stringify(userGeoLocation));
+  }, [userGeoLocation])
+
+
+
+  // listen for appLocation update and run getWeather
+  useEffect(() => {
+    if (appLocation) {
+      getWeather(appLocation.woeid)
+    }
+  }, [appLocation])
 
   //update on search Query
   useEffect(() => {
